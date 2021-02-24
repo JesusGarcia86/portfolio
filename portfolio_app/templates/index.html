@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Garcia</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="{% static 'logo.jpg' %}" alt="picture of logo" style="width: 150px; height: 70px;">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#about" id="about_nav" style="padding: 20px;">About</a></li>
+                    <li><a href="#portfolio" id="portfolio_nav" style="padding: 20px;">Portfolio</a></li>
+                    <li><a href="#contact" id="contact_nav" style="padding: 20px;">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="content">
+        <h1 id="first">Jesus</h1>
+        <h1 id="second">Garcia</h1>
+        <h3>Former Tennis Professional & Full Stack Software Developer</h3>
+    </div>
+    <div class="wrap" data-aos="rotate-ac" data-aos-duration="500" data-aos-easing="ease-in-quad">
+        <a data-scroll href="#about">
+          <div class="arrow"></div>
+        </a>
+    </div>
+    <div id="about">
+        <img src="{% static 'jesus.jpg' %}" alt="me" style="width: 400px; height: 550px; display: inline-block; margin-top: 150px; margin-left: 20px;" data-aos="flip-left">
+        <div class="about">
+            <h1 style="text-align: center; margin-top: 0px; color: turquoise;">About</h1>
+            <p style="margin-left: 180px;">Hi, My name is Jesus Garcia, I am a Tennis Professional and a Full Stack Software Developer</p>
+            <div class="education">
+            <h3 style="color: turquoise;">Education</h3>
+                <ul class="schools">
+                    <li>ITESO University, Psychology, Guadalajara, Mexico</li>
+                    <li>University of Miami, Psychology, Miami, Florida</li>
+                    <li>West Los Angeles College, Business Administration, Los Angeles, California</li>
+                    <li>Coding Dojo, Full Stack Developer, Online</li>
+                </ul>
+            </div>
+            <div class="technologies">
+                <h3 style="color: turquoise;">Technologies</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Ajax</li>
+                    <li>MySql</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>Java</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3 style="color: turquoise;">Skills</h3>
+                <ul>
+                    <li>Resilience</li>
+                    <li>Problem Solving</li>
+                    <li>Team Work</li>
+                    <li>Hard Working</li>
+                    <li>Discipline</li>
+                    <li>Goal Settings</li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h3 style="color: turquoise;">Hobbies</h3>
+                <ul>
+                    <li>Play/Watch Soccer</li>
+                    <li>Music</li>
+                    <li>Movies</li>
+                    <li>Video Games</li>
+                    <li>Hiking</li>
+                    <li>Bike Riding</li>
+                </ul>
+            </div>
+            <div class="goal">
+                <h3 style="color: turquoise;">My Goal</h3>
+                <p>My goal is to join a team of developers that share the passion I have for programming, learn, grow and create projects together.</p>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="box a" data-aos="rotate-ac" data-aos-duration="500" data-aos-easing="ease-in-quad">
+            <h2>Jesus Garcia's Projects</h2>
+         </div>
+         <main class="container">
+            <section class="card" data-aos="fade-right">
+               <img src="{% static 'wishes.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 200px;">Wishes Project</h3>
+                  <p>The wishes project was to obtain my black belt in the Python Stack and it was created with Django. Basically, it allows the user to either log in or register, the log and register have validations for first name and last name to have more than 2 characters, email has to be a valid email format, password needs to contain at least 6 characters and must match with confirm password. Password are encrypted using bcrypt. Once in the main page, the user can add and edit a wish to the wishlist, once a wish has been granted, it can be added to the granted wishes section. The user can like and comment and only the user itself can delete them.</p>
+                  <br>
+                  <a href="https://13.59.113.71" style="font-size: 18px; color: red; margin-left: 200px;">Launch Wishes Project</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+               <img src="{% static 'prophet.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 200px;">Prophet PR Website</h3>
+                  <p>Prophet PR website consists in a simple landing page styled with a logo and animated sliding words based on client request. Only HTML and CSS was used to create this website.</p>
+                  <br>
+                  <a href="https://13.59.113.71" style="font-size: 18px; color: red; margin-left: 200px;">Launch Prophet PR Website</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+               <img src="{% static 'andrew.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 170px;">Andrew Freund's Website</h3>
+                  <p>Andrew's website consist in a simple looking website that talks about his professional life. Added some glowing social media icons that redirect to his social media platform, a slide show with some of his pictures. It also contains an about section about his career experience. He works for Dish Nation so live streaming is a big thing so we added all of his videos from Youtube on his website and for the end, client asked to be contacted through his agency. Only HTML and CSS was used to create this website.</p>
+                  <br>
+                  <a href="https://www.andrewfreund.net" style="font-size: 18px; color: red; margin-left: 200px;">Launch Andrew Freund's Website</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+               <img src="{% static 'epta.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 130px;">Elite Performance Tennis Academy USA</h3>
+                  <p>This is an end to end website created with Django, HTML, CSS and JavaScript. It gives the user the chance to log in or register to access the full content but they also can navigate as a guest with access to basic content. Used third party APIs for contact, location and processing payments. A forum was built to allow the users to interact and help each other with their tennis skills.</p>
+                  <br>
+                  <a href="https://www.epta-usa.com" style="font-size: 18px; color: red; margin-left: 200px;">Launch EPTA-USA Website</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+               <img src="{% static 'cards.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 200px;">Holiday Greetings</h3>
+                  <p>For this project colaborated with 3 other software developers. This program was built to allow the users to stay in touch with their loved ones by sending a holiday greeting card, the users can select a card from a variety of selections or they can import their own, users can also add music and a personalized text message to their card, once the user finished creating the card, they can now proceed to send it to anybody and as many times as they would like to send it. Used HTML, CSS, JavaScript and third party APIs for email and image uploading.</p>
+                  <br>
+                  <a href="https://www.holidaygreetingscards.com" style="font-size: 18px; color: red; margin-left: 200px;">Launch Holiday Greetings Website</a>
+               </div>
+            </section>
+         </main>
+    <div id="contact">
+        <h1 id="contact-us" style="width: 100%; text-align: center; color: turquoise; margin-top: 30px;" data-aos="zoom-in">Contact</h1>
+        <div id="map" data-aos="flip-down"></div>
+        <div class="email">
+            <p><a href="mailto:thesampritas86@gmail.com" style="color: white; font-size: 20px; margin-left: 630px;">tenniscoachca@gmail.com</a></p>
+            <section data-aos="flip-up">
+                <div class="wrapper">
+                    <form action="https://formspree.io/f/xoqpknwa" method="POST" id="my-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="Name" name="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea placeholder="Your Message Here" id="message" name="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="status"></div>
+            </section>
+        </div>
+        <div class="fa">
+            <ul class="links">
+                <li class="face"><a href="https://www.facebook.com/RogerSampritas" style="color: yellow;"><i class="fab fa-facebook" style="margin-left: 12px;"></i></a></li>
+                <li class="insta"><a href="https://www.instagram.com/coach_jesus_garcia/" style="color: yellow;"><i class="fab fa-instagram" style="margin-left: 12px;"></i></a></li>
+                <li class="linked"><a href="https://www.linkedin.com/in/jesusgarcia1986/" style="color: yellow;"><i class="fab fa-linkedin" style="margin-left: 12px;"></i></a></li>
+                <li class="github"><a href="https://github.com/JesusGarcia86" style="color: yellow;"><i class="fab fa-github" style="margin-left: 12px;"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="{% static 'navbar.js' %}"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_MC8zB5CtakgF6edYLEH6ZZ_Jn2eMAMA&callback=initMap"
+    type="text/javascript"></script>
+<script src="{% static 'map.js' %}"></script>
+<script src="{% static 'email.js' %}"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       offset: 150,
+       duration: 1500
+    });
+  </script>
+</html>
