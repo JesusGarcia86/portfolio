@@ -211,7 +211,7 @@ body {
     margin-left: 550px;
   }
   #about {
-    height: 115vh;
+    height: 110vh;
     width: 1452px;
     background-color: black;
     color: white;
@@ -237,18 +237,17 @@ body {
   }
   .skills {
       display: inline-block;
-      margin-left: 100px;
+      margin-left: 30px;
   }
   .hobbies {
       display: inline-block;
-      margin-left: 50px;
+      margin-left: 30px;
   }
   .goal {
       display: inline-block;
       width: 350px;
       vertical-align: top;
-      margin-left: 50px;
-      margin-bottom: 100px;
+      margin-left: 30px;
   }
   #portfolio {
     height: 550vh;

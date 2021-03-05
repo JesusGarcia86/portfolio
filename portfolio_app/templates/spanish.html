@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesus Garcia</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="{% static 'logo.jpg' %}" alt="picture of logo" style="width: 150px; height: 70px;">
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#about" id="about_nav" style="padding: 20px;">Acerca</a></li>
+                    <li><a href="#portfolio" id="portfolio_nav" style="padding: 20px;">Proyectos</a></li>
+                    <li><a href="#contact" id="contact_nav" style="padding: 20px;">Contacto</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    <div class="content">
+        <h1 id="first">Jesus</h1>
+        <h1 id="second">Garcia</h1>
+        <h3>Ex-tenista Profesional y  Programador de Software</h3>
+    </div>
+    <a href="/"><img src="{% static 'usa.jpg' %}" alt="picture of logo" style="width: 40px; height: 30px; display: inline-block; margin-left: 30px;"></a>
+    <div class="wrap" data-aos="rotate-ac" data-aos-duration="500" data-aos-easing="ease-in-quad">
+        <a data-scroll href="#about">
+          <div class="arrow"></div>
+        </a>
+    </div>
+    <div id="about">
+        <img src="{% static 'jesus.jpg' %}" alt="me" style="width: 400px; height: 550px; display: inline-block; margin-top: 150px; margin-left: 20px;" data-aos="flip-left">
+        <div class="about">
+            <h1 style="text-align: center; margin-top: 0px; color: turquoise;">Acerca de mi</h1>
+            <p style="margin-left: 180px;">Hola, mi nombre es Jesus Garcia, soy un tenista profesional y un programador de software.</p>
+            <div class="education">
+            <h3 style="color: turquoise;">Education</h3>
+                <ul class="schools">
+                    <li>Universidad ITESO, Psychologia, Guadalajara, Mexico</li>
+                    <li>University of Miami, Psychologia, Miami, Florida</li>
+                    <li>West Los Angeles College, Administracion de Empresas, Los Angeles, California</li>
+                    <li>Coding Dojo, Programador de Software, En Linea</li>
+                </ul>
+            </div>
+            <div class="technologies">
+                <h3 style="color: turquoise;">Technologies</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>Ajax</li>
+                    <li>MySql</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Flask</li>
+                    <li>Java</li>
+                    <li>React</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3 style="color: turquoise;">Habilidades</h3>
+                <ul>
+                    <li>Resiliencia</li>
+                    <li>Solucionar problemas</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Trabajo duro</li>
+                    <li>Disciplina</li>
+                    <li>Establecimiento de metas</li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h3 style="color: turquoise;">Pasatiempos</h3>
+                <ul>
+                    <li>Jugar/Ver futbol</li>
+                    <li>Musica</li>
+                    <li>Peliculas</li>
+                    <li>Video Juegos</li>
+                    <li>Caminatas</li>
+                    <li>Paseo en bicicleta</li>
+                </ul>
+            </div>
+            <div class="goal">
+                <h3 style="color: turquoise;">Mi meta</h3>
+                <p>Mi meta es unirme a un grupo de programadores que comparta la misma pasion y el deseo por aprender, mejorar y crear muchos proyectos juntos.</p>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="box a" data-aos="rotate-ac" data-aos-duration="500" data-aos-easing="ease-in-quad">
+            <h2>Mis Proyectos</h2>
+         </div>
+         <main class="container">
+            <section class="card" data-aos="fade-right">
+               <img src="{% static 'wishes.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 200px;">El proyecto de los deseos</h3>
+                  <p>El proyecto de los deseos es el que hice para obtener mi liston negro(que es el mayor logro de Coding Dojo) y mi graduación en Python y fue creado con Django. Basicamente permite al usuario iniciar sesion o registrarse. Todo tiene sus propias validaciones para asegurar que el usuario ingrese la información correcta, las contraseñas son encriptadas con bcrypt para maximizar la seguridad del usuario. Una vez iniciada la sesión los usuarios puede ingresar o editar sus deseos para que otros usuarios esten informados de ello, una vez que el deseo es concedido, el usuario simplement da click en el link de granted y automaticamente se transfiere a la lista de deseos concedidos.</p>
+                  <br>
+                  <a href="https://13.59.113.71" style="font-size: 18px; color: red; margin-left: 200px;">Ver el proyecto de los deseos</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+               <img src="{% static 'prophet.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 200px;">Pagina web para Prophet PR</h3>
+                  <p>La pagina web para Prophet PR website consiste en una simple pagina web que muestra informacion basica como logo, informacion y contacto, solamente se uso HTML y CSS para construir esta pagina web.</p>
+                  <br>
+                  <a href="https://13.59.113.71" style="font-size: 18px; color: red; margin-left: 200px;">Ver Prophet PR pagina web</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+               <img src="{% static 'andrew.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 170px;">Pagina web para Andrew Freund</h3>
+                  <p>La pagina web para Andrew consiste en una estructura simple que habla de su vida profesional, su trabajo y proyectos. Se le dio un poco de vida usando cosas interactivas como palabras que se deslizan e iconos de redes sociales que brillan para animar la estructura. La parte principal es los videos que el realiza en su trabajo para Dish Nation entonces se agregaron por medio de Youtube, por ultimo el contancto, el solicito un simple contacto por medio de agencia.</p>
+                  <br>
+                  <a href="https://www.andrewfreund.net" style="font-size: 18px; color: red; margin-left: 200px;">Launch Andrew Freund's Website</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-left">
+               <img src="{% static 'epta.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 130px;">Elite Performance Tennis Academy USA</h3>
+                  <p>Este proyecto fue creado desde la planificacion con Balsamiq para planificar la estructura. Permite al usuario iniciar sesion o registrarse. Todo tiene sus propias validaciones para asegurar que el usuario ingrese la información correcta, las contraseñas son encriptadas con bcrypt para maximizar la seguridad del usuario. Los usuarios pueden inicar sesion para ver el contenido completo o seguir navegando como huespedes y tener accesso parcial. Integre diversos APIs para manejar videos, ubicacion y procesar pagos. Se creo una zona forum donde los usuarios pueden compartir sus experiencias en tenis.</p>
+                  <br>
+                  <a href="https://www.epta-usa.com" style="font-size: 18px; color: red; margin-left: 200px;">Ver EPTA-USA</a>
+               </div>
+            </section>
+            <section class="card" data-aos="fade-right">
+               <img src="{% static 'cards.png' %}" alt="me">
+               <div>
+                  <h3 style="margin-left: 200px;">Holiday Greetings</h3>
+                  <p>Para este projecto colabore con 3 programadores de software para crear desde la planificacion hasta la ejecucion. Este programa se construyo para permitir a los usuarios estar en contacto con sus seres amados enviandoles una tarjeta virtual. Permite al usuario iniciar sesion o registrarse. Todo tiene sus propias validaciones para asegurar que el usuario ingrese la información correcta, las contraseñas son encriptadas con bcrypt para maximizar la seguridad del usuario. Una vez iniciada sesion los usuarios pueden crear su tarjeta virtual ya sea escogiendo de las que tenemos en la base de datos o pueden cargar su propia imagen o video, tambien pueden agregar notas personalizadas y musica, una vez que terminar de crear su tarjeta pueden mandarla directamente a una o mas personas. Las herramientas usadas para este proyecto fueron HTML, CSS, Javascript y algunos APIs externos.</p>
+                  <br>
+                  <a href="https://www.holidaygreetingscards.com" style="font-size: 18px; color: red; margin-left: 200px;">Ver Holiday Greetings</a>
+               </div>
+            </section>
+         </main>
+    <div id="contact">
+        <h1 id="contact-us" style="width: 100%; text-align: center; color: turquoise; margin-top: 30px;" data-aos="zoom-in">Contacto</h1>
+        <div id="map" data-aos="flip-down"></div>
+        <div class="email">
+            <p><a href="mailto:thesampritas86@gmail.com" style="color: white; font-size: 20px; margin-left: 630px;">thesampritas86@gmail.com</a></p>
+            <section data-aos="flip-up">
+                <div class="wrapper">
+                    <form action="https://formspree.io/f/xoqpknwa" method="POST" id="my-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="Name" name="Name" placeholder="Nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea placeholder="Su mensaje aqui" id="message" name="message" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div id="status"></div>
+            </section>
+        </div>
+        <div class="fa">
+            <ul class="links">
+                <li class="face"><a href="https://www.facebook.com/RogerSampritas" style="color: yellow;"><i class="fab fa-facebook" style="margin-left: 12px;"></i></a></li>
+                <li class="insta"><a href="https://www.instagram.com/coach_jesus_garcia/" style="color: yellow;"><i class="fab fa-instagram" style="margin-left: 12px;"></i></a></li>
+                <li class="linked"><a href="https://www.linkedin.com/in/jesusgarcia1986/" style="color: yellow;"><i class="fab fa-linkedin" style="margin-left: 12px;"></i></a></li>
+                <li class="github"><a href="https://github.com/JesusGarcia86" style="color: yellow;"><i class="fab fa-github" style="margin-left: 12px;"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="{% static 'navbar.js' %}"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_MC8zB5CtakgF6edYLEH6ZZ_Jn2eMAMA&callback=initMap"
+    type="text/javascript"></script>
+<script src="{% static 'map.js' %}"></script>
+<script src="{% static 'email.js' %}"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       offset: 150,
+       duration: 1500
+    });
+  </script>
+</html>

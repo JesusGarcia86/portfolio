@@ -26,7 +26,7 @@ SECRET_KEY = secret
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.133.127.25, garcia-jesus.com, www.garcia-jesus.com']
 
 
 # Application definition
